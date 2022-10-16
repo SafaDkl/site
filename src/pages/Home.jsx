@@ -16,7 +16,7 @@ function Home() {
         <Business />
         <Interested />
       </grid>
-      {/* <Footer /> */}
+     <Footer />
     </>
   );
 }
