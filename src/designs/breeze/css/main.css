@@ -1,0 +1,70 @@
+
+
+        #myVideo {
+            overflow: hidden;
+            display: flex;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+        }
+
+        .go-corner {
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .go-arrow {
+            margin-top: -4px;
+            margin-right: -4px;
+            color: white;
+            font-family: courier, sans;
+        }
+
+        .card1 {
+            display: block !important;
+            position: relative !important;  
+            background-color: #fdf7fd00 !important;
+            border-radius: 4px !important;
+            padding: 32px 24px !important;
+            text-decoration: none !important;
+            z-index: 0;
+            overflow: hidden;
+            text-transform: capitalize !important;
+        }
+
+        .card1:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            bottom: -22px;
+            left: -32px;
+            background: #9ed1cdc9;
+            height: 55px;
+            width: 55px;
+            transform-origin: 50% 50%;
+            transition: transform 0.3s ease-out;
+            transform: rotate(52deg);
+        }
+
+        .card1:hover:before {
+            transform: scale(90);
+        }
+
+        .card1:hover p {
+            transition: all 0.9s ease-out;
+            color: rgba(17, 15, 15, 0.8);
+        }
+
+        .card1:hover h3 {
+            transition: all 0.8s ease-out;
+            color: rgb(17, 16, 16);
+        }
