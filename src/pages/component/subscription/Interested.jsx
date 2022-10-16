@@ -189,11 +189,33 @@ function Interested() {
           </Grid>
         </Box>
       </Grid>
-      {openBusinessModal && <BusinessesModal openJoin={openBusinessModal} setOpenJoin={setOpenBusinessModal} />}
-      {openIndividualModal && (<IndividualsModal openCollab={openIndividualModal} setOpenCollab={setOpenIndividualModal} />)}
-      {openUnionsModal && (<UnionsModal openCollab={openUnionsModal} setOpenCollab={setOpenUnionModal} />)}
-      {openGovernModal && (<GovernModal openCollab={openGovernModal} setOpenCollab={setOpenGovernModal} />)}
-      {openNgoModal && (<NgosModal openCollab={openNgoModal} setOpenCollab={setOpenNgoModal} />)}
+      {openBusinessModal && (
+        <BusinessesModal
+          openJoin={openBusinessModal}
+          setOpenJoin={setOpenBusinessModal}
+        />
+      )}
+      {openIndividualModal && (
+        <IndividualsModal
+          openCollab={openIndividualModal}
+          setOpenCollab={setOpenIndividualModal}
+        />
+      )}
+      {openUnionsModal && (
+        <UnionsModal
+          openJoin={openUnionsModal}
+          setOpenJoin={setOpenUnionModal}
+        />
+      )}
+      {openGovernModal && (
+        <GovernModal
+          openJoin={openGovernModal}
+          setOpenJoin={setOpenGovernModal}
+        />
+      )}
+      {openNgoModal && (
+        <NgosModal openJoin={openNgoModal} setOpenJoin={setOpenNgoModal} />
+      )}
     </>
   );
 }

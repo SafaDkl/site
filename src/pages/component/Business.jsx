@@ -4,11 +4,13 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
+import Media from "./business/Media";
 
 const videoEx = {
   width: "62vW",
   height: "50vh",
   position: "relative",
+  display: "block",
 };
 const videoContainer = {
   display: "block",
@@ -20,7 +22,7 @@ function Business() {
     <CssBaseline>
       <Container
         maxWidth="xl"
-        style={{ textAlign: "center", display: "block", height: "60vh"}}
+        style={{ textAlign: "center", display: "block", height: "60vh" }}
       >
         <Box xs={9}>
           <Typography variant="h4" style={{ margin: "35px" }}>
@@ -28,14 +30,7 @@ function Business() {
           </Typography>
         </Box>
         <Grid item xs={12} style={videoContainer}>
-          <iframe
-            style={videoEx}
-            src="https://www.youtube.com/embed/k0OmnkE6f4E"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+            <Media loading={true} style={videoEx}/>
         </Grid>
       </Container>
     </CssBaseline>

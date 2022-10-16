@@ -53,11 +53,30 @@ export default function BusinessesModal(props) {
           </grid>
           <h3 style={textAccess}>Join Waitlist</h3>
           <p>
-            Be one of the first to create a profile and claim an exclusive subscription.
+            Be one of the first to create a profile and claim an exclusive
+            subscription.
           </p>
         </DialogTitle>
         <DialogContent>
           <DialogContentText style={content}></DialogContentText>
+          <TextField
+            autoFocus
+            margin="dense"
+            id="name"
+            label="First Name"
+            type="text"
+            fullWidth
+            variant="standard"
+          />
+          <TextField
+            autoFocus
+            margin="dense"
+            id="name"
+            label="Last Name"
+            type="text"
+            fullWidth
+            variant="standard"
+          />
           <TextField
             autoFocus
             margin="dense"
@@ -71,7 +90,7 @@ export default function BusinessesModal(props) {
             autoFocus
             margin="dense"
             id="name"
-            label="Email Address"
+            label="Email"
             type="email"
             fullWidth
             variant="standard"
@@ -80,8 +99,8 @@ export default function BusinessesModal(props) {
             autoFocus
             margin="dense"
             id="name"
-            label="Phone Number"
-            type="tel"
+            label="Role"
+            type="text"
             fullWidth
             variant="standard"
           />
@@ -89,8 +108,26 @@ export default function BusinessesModal(props) {
             autoFocus
             margin="dense"
             id="name"
-            label="Company Address"
-            type="search"
+            label="Number of employees"
+            type="text"
+            fullWidth
+            variant="standard"
+          />
+          <TextField
+            autoFocus
+            margin="dense"
+            id="name"
+            label="Average revenue past 3 years"
+            type="text"
+            fullWidth
+            variant="standard"
+          />
+          <TextField
+            autoFocus
+            margin="dense"
+            id="name"
+            label="Questions"
+            type="text"
             fullWidth
             variant="standard"
           />{" "}
