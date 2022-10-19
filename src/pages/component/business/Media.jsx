@@ -13,12 +13,9 @@ function MediaSkeleton(props) {
         <Box sx={{ maxWidth: 1400, m: 2 }}>
           <Skeleton
             variant="rectangular"
-            width={1400}
-            height={400}
+            width={"77vw"}
+            height={"50vh"}
           />
-          <Skeleton width="60%" />
-          <Skeleton width="60%" />
-          <Skeleton width="40%" />
         </Box>
       )}
     </Grid>

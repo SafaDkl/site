@@ -14,11 +14,10 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
-const pages = ["Home", "Who we are", "Contact Us"];
+const pages = ["Home", "Contact Us"];
 const logoimg ={
     width:"35%",
-    position: "relative",
-    right: "-63%",
+    position: "relative"
 };
 const navbar={
     color: "black",
@@ -101,19 +100,14 @@ const NavBar = () => {
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
+              flexGrow: 1
             }}
           >
             <img src={logo} alt="" style={logoimg}></img>
           </Typography>
           <Box sx={{ flexGrow: 3 }} />
           <Box
-            sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
+            sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}
             alignItems="right"
           >
             {pages.map((page) => (
@@ -129,32 +123,6 @@ const NavBar = () => {
         </Toolbar>
       </Container>
     </AppBar>
-
-    /* <grid id="top" className="resize-logo sticky scrolled-deep" style={menuheight}>
-        <grid id="header">
-            <grid id="header-main" style={menuheight}>
-                <grid id="title">
-                    <a href="index.html">
-                        <grid className="mz_component mz_wysiwyg mz_editable">
-                            <grid className="moze-wysiwyg-editor">
-                                <img src={logo} alt=""></img>
-                            </grid>
-                        </grid>
-                    </a>
-                </grid>
-                <grid className="mz_component mz_menu" id="menu" style={menuheight}>
-                    <ul style={menutext}>
-                        <li className="selected"><a href="index.html">Home</a>
-                        </li>
-                        <li><a href="who-we-are/index.html">Who we are</a>
-                        </li>
-                        <li><a href="contact-us/index.html">Contact Us</a>
-                        </li>
-                    </ul>
-                </grid>
-            </grid>
-        </grid>
-    </grid> }*/
   );
 };
 export default NavBar;

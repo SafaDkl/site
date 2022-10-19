@@ -58,7 +58,7 @@ function VidBanner() {
               >
                 <video id="myVideo" loop src={video} muted autoPlay></video>
                 <Grid style={header}>
-                  <Typography variant="h2" alignCenter>
+                  <Typography variant="h3" alignCenter>
                     Elevate the economy; spark evolution.
                   </Typography>
                 </Grid>
