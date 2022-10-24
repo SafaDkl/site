@@ -29,40 +29,53 @@ const theme = createTheme({
 });
 
 const header = {
-  position: "relative",
-  top: "25vh",
   textAlign: "center",
   display: "block",
   margin: "0",
+  width: "100%",
+  height: "75%",
+  position: "absolute",
+  top: "0",
+  left: "0",
+  zIndex:"2",
+  padding:"15%"
 };
 
 function VidBanner() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline>
-        <Container style={{height:"60vh"}}>
+        <Container style={{ height: "70vh" }}>
           <Grid container justifyContent="center">
             <Container>
               <Box
                 sx={{
                   position: "absolute",
-                  top: "60px",
+                  top: "0px",
                   left: "0px",
                   right: "0px",
                   bottom: "0px",
                   width: "100%",
-                  height: "60vh",
-                  zIndex: "0",
-                  backgroundColor: "primary.dark",
+                  height: "75%",
+                  zIndex: "1",
                 }}
               >
                 <video id="myVideo" loop src={video} muted autoPlay></video>
-                <Grid style={header}>
-                  <Typography variant="h3" alignCenter>
-                    Elevate the economy; spark evolution.
-                  </Typography>
-                </Grid>
               </Box>
+              <Grid style={header}>
+                <Typography
+                  variant="h3"
+                  alignCenter
+                  style={{
+                    color: "#302f2f",
+                    fontWeight: "700",
+                    fontStyle: "normal",
+                    fontFamily: "montserrat-alternates, sans-serif",
+                  }}
+                >
+                  Elevate the economy; spark evolution.
+                </Typography>
+              </Grid>
             </Container>
           </Grid>
         </Container>

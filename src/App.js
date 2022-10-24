@@ -1,4 +1,3 @@
-import './App.css';
 import Home from './pages/Home';
 import ScopedCssBaseline from "@mui/material/ScopedCssBaseline";
 

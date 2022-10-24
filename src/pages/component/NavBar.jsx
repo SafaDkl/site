@@ -22,6 +22,8 @@ const logoimg ={
 const navbar={
     color: "black",
     backgroundColor: "white",
+    position: "relative",
+    zIndex:"3"
 };
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

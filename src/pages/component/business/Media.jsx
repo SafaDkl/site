@@ -10,7 +10,7 @@ function MediaSkeleton(props) {
   return (
     <Grid container wrap="nowrap">
       {loading && (
-        <Box sx={{ maxWidth: 1400, m: 2 }}>
+        <Box sx={{ m: 6 }}>
           <Skeleton
             variant="rectangular"
             width={"77vw"}

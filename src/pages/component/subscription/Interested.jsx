@@ -12,22 +12,15 @@ import Paper from "@mui/material/Paper";
 
 const centeredText = {
   textAlign: "center",
-  marginBottom: "20px",
+  marginBottom: "25px",
 };
 
-const centereAll = {
-  textAlign: "center",
-  display: "block",
-  marginTop: "20px",
-};
 
 const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(3),
   textAlign: "center",
   background: "transparent",
-  boxShadow:"none",
-  border: "1px solid #eee",
-  margin: "8px"
+  boxShadow:"none"
 }));
 
 function Interested() {
@@ -43,50 +36,73 @@ function Interested() {
  
   return (
     <>
-      <Container style={centereAll}>
-        <Grid xs={12}>
+      <Container style={{height: '100%'}}>
+        <Grid xs={12} sm={12} md={12}>
           <Box style={centeredText}>
-            <Typography variant="h4" style={{ margin: "55px" }}>
-              Interested to join ?
-            </Typography>
+            <Typography variant="h4">Interested to join ?</Typography>
           </Box>
         </Grid>
-        <Box>
-          <Grid xs={12} container rowSpacing={1}>
-            <Grid xs={6}>
-              <Item>
-                <Button
-                  variant="text"
-                  className="card1"
-                  onClick={() => handleOpenBusinessModal()}
-                  color="secondary"
-                >
-                  <Typography variant="h6">Businesses</Typography>
-                  <Typography color={"GrayText"}>
-                    Whether you are a small business or large corporate, a
-                    union, non-govermental organization or govermental
-                    organizations.
+        <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap={3}>
+          <Box xs={"span 12"} gridColumn="span 6">
+            <Grid>
+              <Button
+                variant="text"
+                className="card1"
+                onClick={() => handleOpenBusinessModal()}
+                color="secondary"
+                sx={{ cursor: "pointer" }}
+              >
+                <Item>
+                  <Typography
+                    variant="h6"
+                    component="div"
+                    color={"#27b59f"}
+                    marginBottom={"10px"}
+                  >
+                    Organizations
                   </Typography>
-                </Button>
-              </Item>
+                  <Typography
+                    variant="body2"
+                    color={"GrayText"}
+                    component="div"
+                  >
+                    Whether you are a small business or large corporate, a
+                    union, non-govermental or govermental organizations.
+                  </Typography>
+                </Item>
+              </Button>
             </Grid>
-            <Grid xs={6}>
-              <Item>
-                <Button
-                  variant="text"
-                  className="card1"
-                  onClick={() => handleOpenIndividualModal()}
-                  color="secondary"
-                >
-                  <Typography variant="h6">Individuals</Typography>
-                  <Typography color={"GrayText"}>
+          </Box>
+          <Box xs={12} gridColumn="span 6">
+            <Grid>
+              <Button
+                variant="text"
+                className="card1"
+                onClick={() => handleOpenIndividualModal()}
+                color="secondary"
+                sx={{ cursor: "pointer" }}
+              >
+                <Item>
+                  <Typography
+                    color={"#27b59f"}
+                    variant="h6"
+                    component="div"
+                    marginBottom={"10px"}
+                  >
+                    Individuals
+                  </Typography>
+                  <Typography
+                    color={"GrayText"}
+                    component="div"
+                    variant="body2"
+                  >
                     For all individuals who are interested to collaborate with
                     us, donate or want to learn more about VBE.
-                  </Typography>                 
-                </Button>
-              </Item>
+                  </Typography>
+                </Item>
+              </Button>
             </Grid>
-          </Grid>
+          </Box>
         </Box>
       </Container>
       {openBusinessModal && (
