@@ -42,6 +42,9 @@ export default function IndividualsModal(props) {
   const handleClose = () => {
     props.setOpenCollab(false);
   };
+  
+  const handleSubmit = () => {
+  };
 
   return (
     <grid>
@@ -51,7 +54,7 @@ export default function IndividualsModal(props) {
             <img src={logo} alt="" style={min}></img>
             <span style={soon}>Coming soon!</span>
           </grid>
-          <h3 style={textAccess}>Get Early Access and collaborate!</h3>
+          <h3 style={textAccess}>Join our team and collaborate!</h3>
         </DialogTitle>
         <DialogContent>
           <DialogContentText style={content}>
@@ -70,7 +73,7 @@ export default function IndividualsModal(props) {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={handleClose}>Subscribe</Button>
+          <Button onClick={handleSubmit}>Subscribe</Button>
         </DialogActions>
       </Dialog>
     </grid>

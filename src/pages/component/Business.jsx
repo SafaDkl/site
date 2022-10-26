@@ -25,16 +25,9 @@ function Business() {
         maxWidth="lg"
         style={{ textAlign: "center", display: "block", height: "80vh" }}
       >
-        <Box xs={12} md={8}>
+        <Box xm={12} md={12}>
           <Typography variant="h4" style={{ marginTop: "35px" }}>
             Our framework
-          </Typography>
-          <Typography variant="body2" color={"GrayText"} mt={"25px"}>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English.{" "}
           </Typography>
         </Box>
         <Container xs={12} style={videoContainer}>

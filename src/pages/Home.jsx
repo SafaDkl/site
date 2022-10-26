@@ -6,16 +6,17 @@ import VidBanner from "./component/VidBanner";
 import Interested from "./component/subscription/Interested";
 import Footer from "./component/Footer";
 import "../designs/breeze/css/main.css";
+import { Grid } from "@mui/material";
 
 function Home() {
   return (
     <>
-      <grid id="wrap" style={{ display: "block" }}>
+      <Grid id="wrap" style={{ display: "block" }}>
         <NavBar />
         <VidBanner />
         <Business />
         <Interested />
-      </grid>
+      </Grid>
      <Footer />
     </>
   );

@@ -36,7 +36,7 @@ function Interested() {
  
   return (
     <>
-      <Container style={{height: '100%'}}>
+      <Container style={{ height: "100%" }}>
         <Grid xs={12} sm={12} md={12}>
           <Box style={centeredText}>
             <Typography variant="h4">Interested to join ?</Typography>
@@ -56,7 +56,7 @@ function Interested() {
                   <Typography
                     variant="h6"
                     component="div"
-                    color={"#27b59f"}
+                    color={"#3c3c3c"}
                     marginBottom={"10px"}
                   >
                     Organizations
@@ -84,7 +84,7 @@ function Interested() {
               >
                 <Item>
                   <Typography
-                    color={"#27b59f"}
+                    color={"#3c3c3c"}
                     variant="h6"
                     component="div"
                     marginBottom={"10px"}
